@@ -62,6 +62,6 @@ yarl
 zipp
 eventlet
 pandas
-SQLKAlchemy
+SQLAlchemy
 urllib3
 importlib-metadata
