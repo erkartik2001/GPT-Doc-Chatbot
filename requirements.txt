@@ -1,4 +1,4 @@
---upgrade pip
+pip
 aiohttp
 aiosignal
 annotated-types
