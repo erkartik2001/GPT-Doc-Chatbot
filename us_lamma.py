@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 def query_ans(unid,query,opkey):
     load_dotenv(".env")
     openai.api_key = opkey
-    # os.environ["PINECONE_API_KEY"] = "be40f998-7766-438a-b5af-3da192458908"
-    pinecone.init(api_key="be40f998-7766-438a-b5af-3da192458908",environment="gcp-starter")
+    api_key = os.getenv("PINECONE_API_KEY")
+    pinecone.init(api_key=api_key,environment="gcp-starter")
 
     vector_store = PineconeVectorStore(index_name=unid,environment="gcp-starter")
     index = VectorStoreIndex.from_vector_store(vector_store=vector_store)
