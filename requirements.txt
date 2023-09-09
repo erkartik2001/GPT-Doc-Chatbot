@@ -23,7 +23,6 @@ itsdangerous
 Jinja2
 joblib
 langchain
-langsmith
 llama-index
 loguru
 MarkupSafe
