@@ -3,15 +3,11 @@ from psycopg2 import Binary
 from psycopg2 import sql
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import jsonify
+import os
+
 
 def connect_db():
-    db_config = { "host":"dpg-cjtf2a15mpss73d3rv1g-a.oregon-postgres.render.com",
-    "user":"chat_sql_db_user",
-    "dbname":"chat_sql_db",
-    "password":"i5QNFqt3VJy0y5PQEBsRc35GvbejWymi",
-    "port" : "5432"}
-
-    connection = psycopg2.connect(**db_config)
+    connection = psycopg2.connect(os.getenv("POSTGRESQL_CONNECTION_URI")
     return connection   
     
 
