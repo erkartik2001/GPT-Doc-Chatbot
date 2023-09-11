@@ -5,7 +5,7 @@ First, clone project from repo:
 
 ```bash
 # paste
-git clone https://github.com/ritik296/chat--bot-app.git
+git clone https://github.com/erkartik2001/GPT-Doc-Chatbot.git
 ```
 
 Install all dependency:
