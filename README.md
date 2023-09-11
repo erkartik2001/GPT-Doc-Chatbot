@@ -19,6 +19,8 @@ Create ``` .env``` file.
 
 Add ``` PINECONE_API_KEY=ENTER_YOUR_PINECONE_KEY ``` in .env file.
 
+Add ``` POSTGRESQL_CONNECTION_URI=ENTER_YOUR_POSTGREURI``` in .env file.
+
 ## For Development
 
 Run the development server:
