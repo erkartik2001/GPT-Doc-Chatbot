@@ -13,7 +13,7 @@ import create_user_index
 
 
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] ="/Users/kartikbaderiya/Documents/PROJECT_CHATBOT/user_content/" #directory location to store user documents
+app.config["UPLOAD_FOLDER"] ="" #directory location to store user documents
 app.config["CORS_HEADERS"] = "Content-Type"
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 socketio = SocketIO(app, ping_interval=25, ping_timeout=60)
